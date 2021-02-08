@@ -1,10 +1,1 @@
-.idea
-.DS_Store
-*.iml
-.vscode
 node_modules
-.eslintcache
-.cache
-dist
-*.tgz
-coverage

@@ -1,0 +1,72 @@
+{
+  "name": "pilet",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "pilet"
+  ],
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && pilet build --fresh",
+    "pack": "pilet pack",
+    "pack:fresh": "rimraf *.tgz && pilet pack",
+    "publish-pilet": "pilet publish --api-key ad647bdc23b7437b8fa8f27c3e2d3f70fbb493c53e9160e07d37a98df333b188 --url http://localhost:9000/api/v1/pilet",
+    "publish-pilet:fresh": "npm run build && npm run pack:fresh && npm run publish-pilet",
+    "start": "pilet debug --port 3000",
+    "upgrade": "pilet upgrade"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@dbeining/react-atom": "latest",
+    "@libre/atom": "latest",
+    "@types/node": "latest",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-router": "^5.1.7",
+    "@types/react-router-dom": "latest",
+    "frontend-shell": "0.11.5",
+    "history": "latest",
+    "path-to-regexp": "latest",
+    "piral-cli": "^0.11.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "7.2.0",
+    "react-router": ">=5.2.0",
+    "react-router-dom": ">=5.2.0",
+    "redux": "4.0.5",
+    "redux-dynamic-modules": "5.2.3",
+    "redux-dynamic-modules-saga": "^5.2.3",
+    "redux-saga": "^1.1.3",
+    "rimraf": "latest",
+    "sass": "^1.26.8",
+    "tslib": "latest",
+    "tsrux": "^1.1.2",
+    "typescript": "latest"
+  },
+  "peerDependencies": {
+    "@dbeining/react-atom": "*",
+    "@libre/atom": "*",
+    "frontend-shell": "*",
+    "history": "*",
+    "path-to-regexp": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "react-router": "*",
+    "react-router-dom": "*",
+    "redux": "*",
+    "redux-dynamic-modules": "*",
+    "redux-saga": "*",
+    "redux-saga/effects": "*",
+    "tslib": "*",
+    "tsrux": "*"
+  },
+  "piral": {
+    "comment": "Keep this section to use the Piral CLI.",
+    "name": "frontend-shell"
+  }
+}

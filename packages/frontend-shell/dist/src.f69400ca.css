@@ -1,0 +1,123 @@
+.shell--layout {
+  width: 100%;
+  min-height: 100%;
+  background: #fff;
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.shell--layout > .shell--layout-horizontal {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  position: relative;
+}
+.shell--layout > .shell--layout-horizontal > .shell--layout-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 2em;
+  flex-grow: 1;
+}
+.shell--header {
+  display: flex;
+  flex-direction: column;
+  padding: 0.7em;
+  font-size: 1em;
+  text-align: left;
+  border-bottom: 2px solid #ef7d00;
+}
+.shell--footer {
+  font-size: 1em;
+  text-align: center;
+  border-top: 2px solid #ef7d00;
+  color: white;
+  padding: 0.7em;
+}
+.shell--footer > .shell--footer-link {
+  margin: 0.25em;
+}
+.shell--sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  flex-shrink: 0;
+  padding: 0.7em;
+  font-size: 1em;
+  text-align: left;
+  border-right: 2px solid #ef7d00;
+}
+.shell--notifications {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 300px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: calc(100% - 2em);
+  overflow-y: auto;
+}
+
+.shell--notification {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+  color: white;
+}
+.shell--notification:not(:first-child) {
+  margin-top: 0.2em;
+}
+.shell--notification > .shell--notification-content {
+  flex-grow: 1;
+}
+.shell--notification > .shell--notification-close {
+  flex-shrink: 0;
+  margin-right: 0;
+}
+
+.shell--notification-title {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.shell--notification-body {
+  font-size: 0.8em;
+}
+
+.shell--notification-error {
+  background: #ff5050;
+}
+
+.shell--notification-warn {
+  background: #f2cc00;
+}
+
+.shell--notification-info {
+  background: #50a2ff;
+}
+.shell--button {
+  border: 1px solid #ef7d00;
+  background: white;
+  padding: 0.4em 0.7em;
+  margin: 0 0.7em;
+  cursor: pointer;
+}
+.shell--button:hover {
+  background: #ef7d00;
+  color: white;
+}
+.shell--input {
+  border: 1px solid black;
+  border-radius: 0;
+  padding: 0.4em 0.7em;
+}
+.shell--input:focus {
+  outline: none;
+  border-color: #ef7d00;
+}
+
+/*# sourceMappingURL=/src.f69400ca.css.map */
