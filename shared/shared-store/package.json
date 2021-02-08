@@ -1,0 +1,33 @@
+{
+    "name": "shared-store",
+    "version": "1.0.0",
+    "description": "> TODO: description",
+    "author": "Shahrukh Shahid <shah.khokhar@hotmail.com>",
+    "homepage": "https://github.com/piral-samples/piral-core-redux-saga-demo#readme",
+    "license": "ISC",
+    "main": "src/index.ts",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/piral-samples/piral-core-redux-saga-demo.git"
+    },
+    "scripts": {
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "bugs": {
+        "url": "https://github.com/piral-samples/piral-core-redux-saga-demo/issues"
+    },
+    "dependencies": {
+        "@reduxjs/toolkit": "^1.5.0",
+        "redux": "^4.0.5",
+        "redux-dynamic-modules": "^5.2.3",
+        "redux-dynamic-modules-saga": "^5.2.3",
+        "redux-saga": "^1.1.3"
+    }
+}
